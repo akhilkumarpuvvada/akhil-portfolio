@@ -98,14 +98,14 @@ export const content = {
           degree: 'M.Sc. Digital Engineering',
           school: 'Otto von Guericke University',
           location: 'Magdeburg, Deutschland',
-          period: '04/2017 – 12/2021',
+          period: '04/2018 – 12/2021',
           focus: 'Focus: Databases, Blockchain, Web Development',
         },
       ],
       languagesTitle: 'Languages',
       languages: [
         { name: 'English', level: 'Fluent — C1', value: 90 },
-        { name: 'German', level: 'Conversational — B1', value: 55 },
+        { name: 'German', level: 'Independent — B2', value: 70 },
       ],
     },
     contact: {
@@ -207,14 +207,14 @@ export const content = {
           degree: 'M.Sc. Digital Engineering',
           school: 'Otto-von-Guericke-Universität',
           location: 'Magdeburg, Deutschland',
-          period: '04/2017 – 12/2021',
+          period: '04/2018 – 12/2021',
           focus: 'Schwerpunkte: Datenbanken, Blockchain, Webentwicklung',
         },
       ],
       languagesTitle: 'Sprachen',
       languages: [
         { name: 'Englisch', level: 'Fließend — C1', value: 90 },
-        { name: 'Deutsch', level: 'Konversation — B1', value: 55 },
+        { name: 'Deutsch', level: 'Selbstständig — B2', value: 70 },
       ],
     },
     contact: {
