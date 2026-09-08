@@ -23,22 +23,6 @@ export default function Education() {
               <p className="mt-3 text-sm text-navy-200">{item.focus}</p>
             </div>
           ))}
-
-          <div className="gradient-ring glass p-6">
-            <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-flare-400">
-              {education.interestsTitle}
-            </h3>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {education.interests.map((hobby) => (
-                <span
-                  key={hobby}
-                  className="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-1.5 text-sm text-navy-100"
-                >
-                  {hobby}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
 
         <div className="lg:col-span-2">

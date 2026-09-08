@@ -46,6 +46,20 @@
     animation: gradient-pan 8s ease infinite;
   }
 
+  .text-3d {
+    transform-style: preserve-3d;
+    text-shadow:
+      0 1px 0 #6d28d9,
+      0 2px 0 #6626c9,
+      0 3px 0 #5f23b9,
+      0 4px 0 #5821a8,
+      0 5px 0 #501e97,
+      0 6px 1px rgba(0, 0, 0, 0.15),
+      0 0 5px rgba(0, 0, 0, 0.1),
+      0 8px 12px rgba(124, 58, 237, 0.35),
+      0 16px 30px rgba(34, 211, 238, 0.15);
+  }
+
   .gradient-ring {
     position: relative;
   }

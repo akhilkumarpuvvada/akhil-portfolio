@@ -5,7 +5,7 @@ export const CONTACT = {
   location: 'Chemnitz, Deutschland',
   linkedin: 'https://linkedin.com/in/akhilpuvvada',
   github: 'https://github.com/akhilkumarpuvvada',
-  website: 'https://akhilpuvvada.info',
+  website: 'https://akhil-portfolio-kohl.vercel.app/',
 }
 
 export const content = {
@@ -20,8 +20,11 @@ export const content = {
     hero: {
       role: 'Full-Stack Developer',
       tagline: 'FinTech & AI Systems',
-      summary:
-        'Full-stack developer with 4+ years building FinTech and AI systems at a German SaaS company — responsible for core platform development for 15+ enterprise clients and for LLM automations that eliminated 200+ hours of manual work every month. Core stack: React, Node.js, TypeScript, PostgreSQL, Redis and LangGraph.',
+      about: [
+        "I'm a full-stack developer in Chemnitz, Germany. For the past four years I've been building FinTech and AI products — most of that time at a German SaaS company, where I owned core platform work for enterprise clients and shipped LLM automations that quietly removed hundreds of hours of manual work every month.",
+        'What I enjoy sits at the messy intersection of product, infrastructure and AI: real-time systems, event-driven backends, and agent workflows that actually hold up in production. Lately I run my own projects end to end — an AI job-application platform and a live cricket scoring app — from system design down to the late-night deploy.',
+        "I care about code that's boring to operate and interfaces that feel fast. When I'm not shipping, I'm usually watching cricket or cooking something a little too ambitious.",
+      ],
       status: 'Permanent residence permit — unrestricted work authorization in Germany. Available immediately.',
       ctaPrimary: 'Get in touch',
       ctaSecondary: 'View work',
@@ -104,8 +107,6 @@ export const content = {
         { name: 'English', level: 'Fluent — C1', value: 90 },
         { name: 'German', level: 'Conversational — B1', value: 55 },
       ],
-      interestsTitle: 'Hobbies & Interests',
-      interests: ['Cricket', 'Cooking'],
     },
     contact: {
       title: 'Get in touch',
@@ -129,8 +130,11 @@ export const content = {
     hero: {
       role: 'Full-Stack-Entwickler',
       tagline: 'FinTech- & KI-Systeme',
-      summary:
-        'Full-Stack-Entwickler mit über 4 Jahren Erfahrung in der Entwicklung von FinTech- und KI-Systemen bei einem deutschen SaaS-Unternehmen — verantwortlich für die Kernentwicklung der Plattform für 15+ Unternehmenskunden und Entwicklung von LLM-Automatisierungen, die monatlich über 200 Stunden manuelle Bearbeitung eliminiert haben. Kern-Stack: React, Node.js, TypeScript, PostgreSQL, Redis und LangGraph.',
+      about: [
+        'Ich bin Full-Stack-Entwickler in Chemnitz. Seit vier Jahren baue ich FinTech- und KI-Produkte — den größten Teil davon bei einem deutschen SaaS-Unternehmen, wo ich die Kernentwicklung der Plattform für Unternehmenskunden verantwortet und LLM-Automatisierungen entwickelt habe, die jeden Monat hunderte Stunden Handarbeit überflüssig gemacht haben.',
+        'Am liebsten arbeite ich dort, wo Produkt, Infrastruktur und KI aufeinandertreffen: Echtzeitsysteme, event-getriebene Backends und Agenten-Workflows, die auch in Produktion standhalten. Aktuell setze ich eigene Projekte komplett allein um — eine KI-gestützte Bewerbungsplattform und eine Live-Cricket-Scoring-App — vom Systemdesign bis zum nächtlichen Deployment.',
+        'Mir ist Code wichtig, der im Betrieb langweilig ist, und Oberflächen, die sich schnell anfühlen. Wenn ich nicht gerade etwas ausliefere, schaue ich Cricket oder koche etwas leicht zu Ambitioniertes.',
+      ],
       status: 'Unbefristeter Aufenthaltstitel — uneingeschränkte Arbeitserlaubnis in Deutschland. Sofort verfügbar.',
       ctaPrimary: 'Kontakt aufnehmen',
       ctaSecondary: 'Projekte ansehen',
@@ -213,8 +217,6 @@ export const content = {
         { name: 'Englisch', level: 'Fließend — C1', value: 90 },
         { name: 'Deutsch', level: 'Konversation — B1', value: 55 },
       ],
-      interestsTitle: 'Hobbys & Interessen',
-      interests: ['Cricket', 'Kochen'],
     },
     contact: {
       title: 'Kontakt aufnehmen',

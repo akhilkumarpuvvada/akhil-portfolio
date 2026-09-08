@@ -1,16 +1,25 @@
+import { lazy, Suspense } from 'react'
 import { useLanguage } from '../i18n/useLanguage'
 import { CONTACT } from '../data/resume'
+import { useTilt } from '../hooks/useTilt'
 import { ArrowDownIcon, GithubIcon, GlobeIcon, LinkedinIcon } from './icons'
+
+const Scene3D = lazy(() => import('./Scene3D'))
 
 const FLOATERS = ['React', 'TypeScript', 'Node.js', 'LangGraph', 'PostgreSQL', 'Redis']
 
 export default function Hero() {
   const { t } = useLanguage()
   const { hero } = t
+  const nameRef = useTilt({ max: 10, perspective: 1200 })
 
   return (
     <section id="top" className="relative flex min-h-[100svh] items-center overflow-hidden">
-      <div className="mx-auto w-full max-w-6xl px-6 pt-32 pb-20">
+      <Suspense fallback={null}>
+        <Scene3D />
+      </Suspense>
+
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pt-32 pb-20">
         <div className="animate-fade-up">
           <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-navy-200 backdrop-blur-sm">
             <span className="relative flex h-2 w-2">
@@ -20,14 +29,19 @@ export default function Hero() {
             {hero.role}
           </p>
 
-          <h1 className="font-display text-[19vw] font-bold leading-[0.85] tracking-tight text-white sm:text-8xl lg:text-9xl">
+          <h1
+            ref={nameRef}
+            className="text-3d origin-left font-display text-[19vw] font-bold leading-[0.85] tracking-tight text-white transition-transform duration-300 ease-out will-change-transform sm:text-8xl lg:text-9xl"
+          >
             <span className="block">Akhil</span>
             <span className="block text-gradient">Puvvada</span>
           </h1>
 
-          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-navy-200 sm:text-xl">
-            {hero.summary}
-          </p>
+          <div className="mt-8 max-w-2xl space-y-4 text-base leading-relaxed text-navy-200 sm:text-lg">
+            {hero.about.map((para, i) => (
+              <p key={i}>{para}</p>
+            ))}
+          </div>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
@@ -63,11 +77,11 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="mt-14 flex flex-wrap gap-3">
+          <div className="mt-14 flex flex-wrap gap-3" style={{ perspective: '600px' }}>
             {FLOATERS.map((tech, i) => (
               <span
                 key={tech}
-                className="animate-float rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2 text-sm text-navy-100 backdrop-blur-sm"
+                className="animate-float rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2 text-sm text-navy-100 backdrop-blur-sm transition-transform duration-300 hover:[transform:translateZ(30px)_rotateX(8deg)]"
                 style={{ animationDelay: `${i * 0.4}s`, animationDuration: `${5 + (i % 3)}s` }}
               >
                 {tech}
@@ -89,7 +103,7 @@ export default function Hero() {
       <a
         href="#experience"
         aria-label="Scroll down"
-        className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 animate-fade-in text-navy-400 transition-colors hover:text-white sm:block"
+        className="absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 animate-fade-in text-navy-400 transition-colors hover:text-white sm:block"
       >
         <ArrowDownIcon className="animate-bounce" />
       </a>

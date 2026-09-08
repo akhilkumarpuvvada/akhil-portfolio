@@ -12,7 +12,7 @@ export default function Contact() {
     { icon: PhoneIcon, label: CONTACT.phone, href: `tel:${CONTACT.phone.replace(/\s/g, '')}` },
     { icon: LinkedinIcon, label: 'linkedin.com/in/akhilpuvvada', href: CONTACT.linkedin },
     { icon: GithubIcon, label: 'github.com/akhilkumarpuvvada', href: CONTACT.github },
-    { icon: GlobeIcon, label: 'akhilpuvvada.info', href: CONTACT.website },
+    { icon: GlobeIcon, label: 'akhil-portfolio-kohl.vercel.app', href: CONTACT.website },
   ]
 
   return (
