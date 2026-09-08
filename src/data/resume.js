@@ -112,7 +112,6 @@ export const content = {
       title: 'Get in touch',
       subtitle: "I'm open to full-stack and AI engineering roles. Let's talk.",
       emailCta: 'Send an email',
-      note: 'References and certificates available on request.',
     },
     footer: {
       built: 'Built with React & Tailwind CSS',
@@ -222,7 +221,6 @@ export const content = {
       title: 'Kontakt aufnehmen',
       subtitle: 'Ich bin offen für Full-Stack- und KI-Engineering-Rollen. Lassen Sie uns sprechen.',
       emailCta: 'E-Mail senden',
-      note: 'Zeugnisse und Nachweise auf Anfrage.',
     },
     footer: {
       built: 'Erstellt mit React & Tailwind CSS',

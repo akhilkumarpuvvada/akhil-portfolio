@@ -48,8 +48,6 @@ export default function Contact() {
               </a>
             ))}
           </div>
-
-          <p className="mt-10 text-xs text-navy-500">{contact.note}</p>
         </div>
       </div>
     </Section>
